@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+</head>
+<style>
+  #outside{
+    background-color: coral;
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 6px;
+    position: relative;
+  }
+  #inside{
+    background-color: rgb(35, 124, 114);
+    height: 60px;
+    width: 60px;
+    border: 1px groove rgb(35, 124, 114);
+    border-radius: 5px;
+    position: absolute;
+  }
+  .btn{
+    margin-top: 5px;
+    width:auto;
+    height: auto;
+    background-color: burlywood;
+    border-radius: 3px;
+    text-decoration: cadetblue;
+    
+  }
+</style>
+<body>
+  <div id="outside">
+    <div id="inside">
+    </div>
+  </div>
+  <button class="btn" onclick="myMove()">Click Me</button>
+<script>
+  
+  function myMove(){
+    let pos =0;
+    const ele = document.getElementById('inside');
+    const i = setInterval(frame(),2000)
+    function frame(){
+      if(pos==350){
+        clearInterval(i);
+      }
+     pos++;
+     ele.style.top = pos + 'px';
+     ele.style.left = pos + 'px';  
+    }  
+  }   
+</script>  
+</body>
+</html> 

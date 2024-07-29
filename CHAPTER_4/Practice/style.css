@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#Bag{
+  background-color: lightgreen;
+  border-radius: 15px;
+  padding:5px 15px;
+  border: none;
+}
+
+#wishlist{
+  margin: 1px;
+  border-radius: 10px;
+  border:3px solid black;
+  padding: 5px 14px 5px 14px;
+  text-transform: uppercase;
+}

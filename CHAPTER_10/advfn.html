@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advance Functions</title>
+</head>
+<body>
+  <script>
+    let sum = function(num1,num2){
+      return num1 + num2;
+    };
+    console.log(sum(4,5));
+    let sum1 = (num1,num2) =>{
+      return num1 + num2; 
+    }
+    console.log(sum1(4,6));
+
+    let alarm = () => console.log(`Subah ho gyi maamu!`);
+    setTimeout(alarm,5000);
+    console.log('Alarm set');
+
+    let arr = [1,2,3,4,5,6,7];
+    arr.forEach((num) => console.log(num));
+    
+  </script>
+</body>
+</html>

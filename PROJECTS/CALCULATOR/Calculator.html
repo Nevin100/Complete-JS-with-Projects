@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" id="display" readonly>
+    <div class="button_container">
+      <button class="button_class" onclick="variable = ``;
+      document.querySelector(`#display`).value = variable;">C</button>
+      <button class="button_class" onclick="variable = variable +`1`;
+      document.querySelector(`#display`).value = variable;">1</button>
+      <button class="button_class" onclick="variable = variable +`2`;
+      document.querySelector(`#display`).value = variable;">2</button>
+    </div>
+    <div class="button_container">
+      <button class="button_class" onclick="variable = variable +`+`;
+      document.querySelector(`#display`).value = variable;">+</button>
+      <button class="button_class" onclick="variable = variable +`3`;
+      document.querySelector(`#display`).value = variable;">3</button>
+      <button class="button_class" onclick="variable = variable +`4`;
+      document.querySelector(`#display`).value = variable;">4</button>
+    </div>
+    <div class="button_container">
+      <button class="button_class" onclick="variable = variable +`-`;
+      document.querySelector(`#display`).value = variable;">-</button>
+      <button class="button_class" onclick="variable = variable +`5`;
+      document.querySelector(`#display`).value = variable;">5</button>
+      <button class="button_class" onclick="variable = variable +`6`;
+      document.querySelector(`#display`).value = variable;">6</button>
+    </div>
+    <div class="button_container">
+      <button class="button_class" onclick="variable = variable +`*`;
+      document.querySelector(`#display`).value = variable;">*</button>
+      <button class="button_class" onclick="variable = variable +`7`;
+      document.querySelector(`#display`).value = variable;">7</button>
+      <button class="button_class" onclick="variable = variable +`8`;
+      document.querySelector(`#display`).value = variable;">8</button>
+    </div>
+    <div class="button_container">
+      <button class="button_class" onclick="variable = variable + `/`;
+      document.querySelector(`#display`).value = variable;">/</button>
+      
+      <button class="button_class" onclick=
+      "let result = eval(variable);
+      variable = result;
+      document.querySelector(`#display`).value = variable;">=</button>
+      
+      <button class="button_class" onclick="variable = variable +`9`;
+      document.querySelector(`#display`).value = variable;">9</button>
+    </div>
+    <div class="button_container">
+      <button class="button_class" onclick="variable = variable +`0`;
+      document.querySelector(`#display`).value = variable;">0</button>
+      <button class="button_class" onclick="variable = variable +`.`;
+      document.querySelector(`#display`).value = variable;">.</button>
+    </div>
+  </div>
+  <script>
+    let variable = ``;
+    document.querySelector(`#display`).value = variable;  
+  </script>
+</body>
+</html>
